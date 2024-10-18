@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Switcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            transition: background-color 0.5s ease;
+        }
+        .color-buttons {
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px;
+            margin-right: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+        }
+        #light {
+            background-color: #f0f0f0;
+            color: black;
+        }
+        #dark {
+            background-color: #333;
+        }
+        #blue {
+            background-color: #2196F3;
+        }
+        #green {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Color Scheme Switcher</h2>
+
+<div class="color-buttons">
+    <button id="light">Light Theme</button>
+    <button id="dark">Dark Theme</button>
+    <button id="blue">Blue Theme</button>
+    <button id="green">Green Theme</button>
+</div>
+
+<script>
+    // Get the buttons by their IDs
+    document.getElementById("light").addEventListener("click", function () {
+        document.body.style.backgroundColor = "#f0f0f0";
+        document.body.style.color = "#000";
+    });
+
+    document.getElementById("dark").addEventListener("click", function () {
+        document.body.style.backgroundColor = "#333";
+        document.body.style.color = "#fff";
+    });
+
+    document.getElementById("blue").addEventListener("click", function () {
+        document.body.style.backgroundColor = "#2196F3";
+        document.body.style.color = "#fff";
+    });
+
+    document.getElementById("green").addEventListener("click", function () {
+        document.body.style.backgroundColor = "#4CAF50";
+        document.body.style.color = "#fff";
+    });
+</script>
+
+</body>
+</html>
+
